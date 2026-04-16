@@ -1,6 +1,6 @@
 # LE XUAN NHI
 
-**Current Position:** Tech Lead
+**Current Position:** Tech Lead  
 **Date of Birth:** Sep 10, 1991  
 **Gender:** Male  
 
