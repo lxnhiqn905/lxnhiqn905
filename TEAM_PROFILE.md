@@ -1,3 +1,5 @@
+![Team Profile](team-profile.png)
+
 # Blockchain & Cloud Team
 
 **System Design · Blockchain · AWS · Smart Contracts · Full Stack**
@@ -53,3 +55,4 @@ Web3 & Full-stack development. Smart contracts (Solidity), dApp engineering (Rea
 
 ~2 hrs/day per person · Available for freelance projects
 
+Portfolio: https://github.com/lxnhiqn905/lxnhiqn905
