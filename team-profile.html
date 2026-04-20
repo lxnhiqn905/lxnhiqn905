@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Team Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0d1117;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 16px;
+      padding: 40px 44px;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 10px;
+    }
+
+    .team-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(135deg, #238636, #1f6feb);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .header-text h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #e6edf3;
+      letter-spacing: -0.3px;
+    }
+
+    .header-text p {
+      font-size: 13px;
+      color: #8b949e;
+      margin-top: 2px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #21262d;
+      margin: 24px 0;
+    }
+
+    /* Team tagline */
+    .tagline {
+      font-size: 14px;
+      color: #8b949e;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+
+    /* Members grid */
+    .members {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .member {
+      background: #0d1117;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      padding: 20px;
+      transition: border-color 0.2s;
+    }
+
+    .member:hover { border-color: #388bfd; }
+
+    .member-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .avatar-nhi  { background: linear-gradient(135deg, #1f6feb, #388bfd); }
+    .avatar-phong { background: linear-gradient(135deg, #238636, #2ea043); }
+    .avatar-my   { background: linear-gradient(135deg, #9e6a03, #d29922); }
+
+    .member-info h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e6edf3;
+    }
+
+    .member-info span {
+      font-size: 11px;
+      color: #8b949e;
+    }
+
+    .member-exp {
+      font-size: 11px;
+      color: #58a6ff;
+      background: #1c2d3f;
+      border: 1px solid #1f3a5c;
+      border-radius: 20px;
+      padding: 2px 8px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .member-desc {
+      font-size: 12px;
+      color: #8b949e;
+      line-height: 1.55;
+      margin-bottom: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .tag-blue   { background: #1c2d3f; color: #58a6ff; border: 1px solid #1f3a5c; }
+    .tag-green  { background: #1a2e1a; color: #3fb950; border: 1px solid #1e3a1e; }
+    .tag-orange { background: #2d1f00; color: #d29922; border: 1px solid #3d2c00; }
+    .tag-purple { background: #2a1f3d; color: #bc8cff; border: 1px solid #3b2d5c; }
+
+    /* Capabilities */
+    .capabilities {
+      background: #0d1117;
+      border: 1px solid #21262d;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+
+    .capabilities h4 {
+      font-size: 12px;
+      font-weight: 600;
+      color: #8b949e;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 14px;
+    }
+
+    .cap-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px 24px;
+    }
+
+    .cap-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 12.5px;
+      color: #c9d1d9;
+      line-height: 1.4;
+    }
+
+    .cap-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #388bfd;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: #6e7681;
+    }
+
+    .footer-note span {
+      color: #3fb950;
+    }
+
+    .portfolio-link {
+      font-size: 12px;
+      color: #58a6ff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .portfolio-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="card">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="team-icon">&#9881;</div>
+      <div class="header-text">
+        <h1>Blockchain &amp; Cloud Team</h1>
+        <p>System Design &nbsp;·&nbsp; Blockchain &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Smart Contracts &nbsp;·&nbsp; Full Stack</p>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <p class="tagline">
+      A three-person team specializing in <strong style="color:#c9d1d9">blockchain system design &amp; architecture</strong>,
+      <strong style="color:#c9d1d9">full-stack Web3 development</strong>, and <strong style="color:#c9d1d9">AWS cloud infrastructure</strong> —
+      covering a project end-to-end from architecture blueprints to production deployment.
+    </p>
+
+    <!-- Members -->
+    <div class="members">
+
+      <!-- Le Xuan Nhi -->
+      <div class="member">
+        <div class="member-header">
+          <div class="avatar avatar-nhi">N</div>
+          <div class="member-info">
+            <h3>Nhi Le</h3>
+            <span>Tech Lead</span>
+          </div>
+        </div>
+        <div class="member-exp">10+ years experience</div>
+        <p class="member-desc">
+          Tech Lead &amp; Architect across blockchain and cloud domains. Designs scalable AWS &amp; Kubernetes architectures, leads RPC node &amp; validator infrastructure, maintains PCI DSS compliance, and drives end-to-end delivery — from requirements to production.
+        </p>
+        <div class="tags">
+          <span class="tag tag-purple">System Design</span>
+          <span class="tag tag-purple">Architecture</span>
+          <span class="tag tag-blue">AWS</span>
+          <span class="tag tag-blue">Kubernetes</span>
+          <span class="tag tag-green">Blockchain Infra</span>
+          <span class="tag tag-green">PCI DSS</span>
+          <span class="tag tag-orange">Tech Lead</span>
+          <span class="tag tag-orange">Project Mgmt</span>
+        </div>
+      </div>
+
+      <!-- My Tran -->
+      <div class="member">
+        <div class="member-header">
+          <div class="avatar avatar-my">M</div>
+          <div class="member-info">
+            <h3>My Tran</h3>
+            <span>DevOps &amp; AWS Professional</span>
+          </div>
+        </div>
+        <div class="member-exp">AWS Specialist</div>
+        <p class="member-desc">
+          DevOps &amp; Cloud Infrastructure on AWS. Landing Zone, multi-account governance, on-prem migration, Kubernetes, Terraform, Ansible. CI/CD pipelines across GitLab, GitHub Actions, Jenkins.
+        </p>
+        <div class="tags">
+          <span class="tag tag-blue">AWS</span>
+          <span class="tag tag-blue">Landing Zone</span>
+          <span class="tag tag-orange">Terraform</span>
+          <span class="tag tag-orange">Ansible</span>
+          <span class="tag tag-blue">Kubernetes</span>
+          <span class="tag tag-green">DevOps</span>
+          <span class="tag tag-green">Migration</span>
+        </div>
+      </div>
+
+      <!-- Ho Thanh Phong -->
+      <div class="member">
+        <div class="member-header">
+          <div class="avatar avatar-phong">P</div>
+          <div class="member-info">
+            <h3>Phong Ho</h3>
+            <span>Talent Fullstack Developer</span>
+          </div>
+        </div>
+        <div class="member-exp">dApp &amp; Smart Contracts</div>
+        <p class="member-desc">
+          Web3 &amp; Full-stack development. Smart contracts (Solidity), dApp engineering (ReactJS + NestJS), CEX wallet systems, DePIN, NFT platforms &amp; microservices.
+        </p>
+        <div class="tags">
+          <span class="tag tag-orange">Full Stack</span>
+          <span class="tag tag-green">Solidity</span>
+          <span class="tag tag-green">Web3</span>
+          <span class="tag tag-orange">NestJS</span>
+          <span class="tag tag-orange">ReactJS</span>
+          <span class="tag tag-purple">NFT / DeFi</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Capabilities -->
+    <div class="capabilities">
+      <h4>What we deliver</h4>
+      <div class="cap-grid">
+        <div class="cap-item"><div class="cap-dot"></div>System Design &amp; Architecture: blockchain infra, RPC nodes, validator systems, fintech platforms</div>
+        <div class="cap-item"><div class="cap-dot"></div>AWS Cloud: Well-Architected, Landing Zone, multi-account governance, on-prem migration</div>
+        <div class="cap-item"><div class="cap-dot"></div>Blockchain Dev: Solidity, smart contracts, dApps, CEX wallet, NFT / DeFi / DePIN</div>
+        <div class="cap-item"><div class="cap-dot"></div>DevOps &amp; IaC: Kubernetes, Terraform, Ansible, ArgoCD, GitHub Actions, GitLab CI</div>
+        <div class="cap-item"><div class="cap-dot"></div>Backend: NestJS, NodeJS, Java, REST APIs, Kafka, microservices</div>
+        <div class="cap-item"><div class="cap-dot"></div>Security: PCI DSS, WAF, OAuth2, cert-manager, Sealed Secrets</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="footer-note">~2 hrs/day per person &nbsp;·&nbsp; <span>Available for freelance projects</span></p>
+      <a class="portfolio-link" href="https://github.com/lxnhiqn905/lxnhiqn905" target="_blank">
+        &#128279; github.com/lxnhiqn905
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
