@@ -1,12 +1,57 @@
-![NPM Devs](npm-devs-avatar.png)
+![Strivingdev](strivingdev-avatar.png)
 
-# NPM Devs
+# Strivingdev
 
-**Full Stack · DevOps & Cloud Architect · 10y+**
+**Free Consultation - Solutions Architect - DevOps - 10y**
 
-Hello! Thank you for visiting our profile.
+Not sure what you need yet? That's exactly where we start — reach out, it's free.
 
-We are NPM Devs — Nhi, Phong & My — a team of engineers with 10+ years of experience delivering production-ready solutions across DevOps & Cloud Infrastructure, Blockchain Systems, and Full-Stack Web3 Development. We take full ownership of every project, from requirements and system design through to deployment and monitoring.
+I lead Strivingdev, a team of experienced engineers focused on one thing: delivering the right solution at the right cost — not the most complex one, not the most expensive one.
+
+Before we write a single line of code, we talk. We take time to understand your problem, explore the options, and agree on a direction that actually makes sense for your context. That clarity upfront is what makes the delivery reliable.
+
+If you're dealing with a technical problem — whether it's infrastructure, a product you need to build, a system that's breaking, or something you haven't been able to put into words yet — reach out. We'll figure it out together. No commitment until we both understand what needs to be done.
+
+I'm happy to consult for free. Once the scope is clear, we can move forward on a foundation of mutual trust and shared understanding.
+
+Below are the areas where we operate:
+
+▌ DevOps & Cloud Infrastructure
+• AWS: EC2, ECS, VPC, RDS, S3, Lambda, WAF, ALB, KMS, Nitro Enclaves
+• Landing Zone: multi-account governance, security baseline, on-prem → cloud migration
+• Kubernetes, Docker, Helm, Traefik, Cilium, Rancher
+• IaC: Terraform, Ansible, CloudFormation
+• CI/CD: GitHub Actions, GitLab CI, Jenkins, ArgoCD, GitOps
+• Monitoring: Prometheus, Grafana, Loki, ELK Stack
+
+▌ Blockchain Infrastructure
+• RPC Nodes (ETH, BTC), CEX Wallet Systems, KMS & Nitro Enclaves
+• Payment Platforms: PCI DSS-compliant, Google Pay & Apple Pay
+• Validator Monitoring, Trading Systems, market maker BOT, FIX Protocol
+
+▌ Smart Contracts & dApps
+• Solidity: DeFi, NFT, DAO, DePIN platforms
+• Full-Stack: ReactJS, NextJS, NestJS, IPFS
+• Architecture: event-driven microservices, Kafka
+
+▌ Web Development
+• Frontend: ReactJS, NextJS, HTML, CSS, TailwindCSS
+• Backend: NodeJS, NestJS, Java, Spring Boot, REST APIs, WebSocket
+• CMS integration & third-party API integration
+
+▌ Bot & Automation
+• Telegram Bots, Discord Bots, Trading Bots & Market Maker automation
+• Web crawlers: Python (Scrapy, BeautifulSoup, Playwright), NodeJS
+• Workflow automation & data pipelines (Python, Bash)
+
+▌ Security & Compliance
+• PCI DSS, WAF, TLS/HTTPS
+• OAuth2 Proxy, Keycloak, cert-manager, Sealed Secrets, Cilium Network Policies
+
+▌ Backend & Databases
+• Java, Spring Boot, NodeJS, NestJS, REST APIs
+• MySQL, PostgreSQL, MSSQL, Oracle, MongoDB, Redis
+• Kafka, RocketMQ, Zookeeper, Consul
 
 ---
 
@@ -33,63 +78,3 @@ DevOps & Cloud Infrastructure on AWS. Landing Zone, multi-account governance, on
 Web3 & Full-stack development. Smart contracts (Solidity), dApp engineering (ReactJS + NestJS), CEX wallet systems, DePIN, NFT platforms & microservices.
 
 `Full Stack` `Solidity` `Web3` `NestJS` `ReactJS` `NFT / DeFi`
-
----
-
-## What We Deliver
-
-### DevOps & Cloud Infrastructure
-- **AWS**: EC2, ECS, VPC, RDS, S3, Lambda, WAF, ALB, KMS, Nitro Enclaves
-- **AWS Well-Architected Framework**, Landing Zone: multi-account governance, security baseline, on-prem → cloud migration
-- **Kubernetes** (HA, from scratch), Docker, Helm, Traefik, Cilium, KCL, Rancher
-- **IaC**: Terraform, Ansible, CloudFormation
-- **CI/CD**: GitHub Actions, GitLab CI, Jenkins, AWS CodePipeline, ArgoCD, GitOps
-- **Monitoring**: Prometheus, Grafana, Loki, ELK Stack
-- Linux server administration, SonarQube (code quality)
-
-### Blockchain Infrastructure
-- **RPC Nodes**: ETH & BTC — high availability & scalability
-- **CEX Wallet Systems**: multi-chain, KMS & Nitro Enclaves
-- **Payment Platforms**: PCI DSS-compliant, Google Pay & Apple Pay
-- **Validator Monitoring**: metrics, health checks, real-time alerts
-- **Trading Systems**: order matching, market maker BOT, FIX Protocol
-
-### Smart Contracts & dApps
-- **Solidity**: DeFi, NFT, DAO, DePIN platforms
-- **Full-Stack**: ReactJS, NextJS, NestJS, IPFS
-- **Architecture**: event-driven microservices, Kafka
-
-### Web Development
-- **Frontend**: ReactJS, NextJS, HTML, CSS, TailwindCSS
-- **Backend**: NodeJS, NestJS, Java, Spring Boot, Spring Cloud, REST APIs, WebSocket
-- CMS integration & third-party API integration
-
-### Bot Development
-- Telegram Bots, Discord Bots
-- Trading Bots & Market Maker automation
-- Workflow automation with Python & Bash scripting
-
-### Crawler & Scraping
-- Web crawlers & scrapers: Python (Scrapy, BeautifulSoup, Playwright)
-- NodeJS-based crawlers
-- Data pipeline automation & scheduled jobs
-
-### Security & Compliance
-- **Standards**: PCI DSS, WAF hardening, TLS/HTTPS
-- **Tools**: OAuth2 Proxy, Keycloak, cert-manager, Sealed Secrets, Cilium Network Policies
-
-### Backend & Databases
-- **Backend**: Java, Spring Boot, Spring Cloud, NodeJS, NestJS, REST APIs
-- **Databases**: MySQL, PostgreSQL, MSSQL, Oracle, MongoDB, Redis
-- **Messaging**: Kafka, RocketMQ, Zookeeper, Consul
-
-### Languages
-- JavaScript, TypeScript, Java, Python, Solidity, Rust, Bash, .NET
-
-### Project Management
-- Scrum / Agile, scope definition, task breakdown, risk management
-- Direct client communication, technical documentation, team mentoring
-
----
-
-~4 hrs/day per person · Available for freelance projects
